@@ -1,7 +1,7 @@
 # Day 2: Cube Conundrum (December 6th, 2023)
 
 from utils import read_input
-lines = read_input("day2ex.txt")
+lines = read_input("day2.txt")
 
 MAX_CUBES = {"red": 12, "green": 13, "blue": 14}
 
@@ -39,7 +39,7 @@ def day2_p2():
             for cubes in set.split(","):
                 count, colour = cubes.split()
                 if int(count) > minimum_set[colour]:
-                    minimum_set[colour] = count
+                    minimum_set[colour] = int(count)
         
         power = minimum_set["red"] * minimum_set["green"] * minimum_set["blue"]
         
