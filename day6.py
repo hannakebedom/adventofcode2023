@@ -19,13 +19,13 @@ def day6_p1():
 
         for j in range(1, time):
             speed = j # in mm per ms
-            remaining_time = time - j # in ms 
+            remaining_time = time - j # in ms
             distance = speed * remaining_time # in mm
             if distance > record_distance:
                 ways_to_beat_record += 1
-        
+
         result *= ways_to_beat_record
-    
+
     return result
 
 print(day6_p1())
@@ -37,11 +37,11 @@ def day6_p2():
 
     for j in range(1, time):
         speed = j # in mm per ms
-        remaining_time = time - j # in ms 
+        remaining_time = time - j # in ms
         distance = speed * remaining_time # in mm
         if distance > record_distance:
             ways_to_beat_record += 1
-    
+
     return ways_to_beat_record
 
 print(day6_p2())
