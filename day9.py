@@ -22,7 +22,7 @@ def day9_p1():
         # extrapolate
         prev = 0
         for layer in reversed(layers):
-            prev = layer[-1] + prev
+            prev = layer[0] - prev
         result += prev
 
     return result
